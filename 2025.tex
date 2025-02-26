@@ -1,0 +1,104 @@
+% Curriculo 10 de agosto de 2021 
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=.75in]{geometry}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{titlesec}
+\usepackage{titling}
+
+\pagenumbering{gobble}
+
+\title{Curriculo Vitae}
+\author{João Santos}
+\def\city{Minas Gerais, Brazil}
+\def\email{joaosan177@gmail.com}
+\def\github{github.com/minenwerfer}
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge
+\theauthor}
+\vspace{1em}
+
+{\small
+\city--- \email--- \github}
+\end{center}
+}
+
+\titleformat{\section}
+{\Large}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\bfseries}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{}
+{}
+{0em}
+{}[ ---]
+
+\titlespacing{\section}
+{0em}
+{1.8em}
+{1em}
+
+\titlespacing{\subsubsection}
+{0em}
+{.5em}
+{0em}
+
+\begin{document}
+\maketitle
+
+\section{Technical abilities}
+\subsection{Software engineering}
+\subsubsection{Programming}
+TypeScript, Python (good overall programming knowledge, can adapt to other languages if needed)
+\subsubsection{Markup}
+HTML5, CSS3, \LaTeX, Markdown, etc
+
+\subsection{System and database administration}
+\subsubsection{Workflow}
+Vim, tiling window managers, tmux
+\subsubsection{Tooling}
+Docker, git, shell script, etc
+\subsubsection{Databases} 
+MongoDB, SQL
+\subsubsection{Operating systems} 
+*/Linux, OpenBSD, general POSIX
+
+\subsection{Office}
+LibreOffice suite, \LaTeX, GIMP image editing, Olive video editing
+
+\section{General abilities}
+\subsection{Spoken languages}
+\subsubsection{English}
+Fluent
+\subsubsection{Portuguese}
+Native
+
+\subsection{Other}
+Deep knowledge in information security and system administration.
+
+\section{Experience}
+\subsection{Aeria (github.com/aeria-org)}
+\subsubsection{Founder and mantainer (2021-present)}
+Aeria is a schema definition language and micro HTTP framework made on top of MongoDB. The project was the first to leverage the Aggregation Framework to populate references on the MongoDB backend directly instead of doing that in the application level, outperforming Prisma and Mongoose.
+
+\subsection{Capsul Brasil}
+\subsubsection{Senior Software Engineer (2021-jan 2025, hybrid)}
+Building and maintenance of business internal software and digital assets. Both software engineering and system administration involved.
+
+
+\end{document}
+
