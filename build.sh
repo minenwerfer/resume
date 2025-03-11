@@ -1,4 +1,4 @@
 #!/bin/sh
 
-find *.tex -exec texi2pdf --mostly-clean {} \;
+find *.tex -exec texi2pdf -c {} \;
 
